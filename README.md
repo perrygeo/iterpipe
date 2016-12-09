@@ -7,7 +7,7 @@ of processing functions (the *Pipeline*). Pipelines can be seamlessly distribute
 across cores for fully parallelized execution.
 
 Inspired by Clojure's threading macros, the `parallel` command and Unix pipes, `iterpipe`
-aims to make processing iterables in Python faster and more functional.
+aims to make processing iterables in Python faster, easier to test and more functional.
 
 ```python
 from iterpipe import Pipeline
@@ -42,11 +42,13 @@ if __name__ == "__main__":
     data = list(pipe(range(100)))  # [0, 20, ..., 980]
 ```
 
+## Status
 
+Alpha. Please try it out and give me some feedback.
 
 
 ## Installation
 
 ```
-pip install -e git:https://github.com/perrygeo/iterpipe.git
+pip install -e "git+https://github.com/perrygeo/iterpipe.git#egg=iterpipe"
 ```
